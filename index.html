@@ -9,25 +9,28 @@
     <title>Reto 2</title>
 </head>
 <body>
+    <div class="container">
     <header class="container__header">
         <!-- <img src="/images/Header/cover.png" alt="montana_lago"> -->
         <section>
             <h2>Book it!</h2>
-            <div  class="container__options">
-                <select class="filter__options-countries">
-                    <option>All countries</option>
-                    <option>Argentina</option>
-                    <option>Brasil</option>                    
-                    <option>Chile</option>
-                    <option>Uruguay</option>
-                </select>
+            <div  class="container__options">                          
+                        <select class="filter__options-countries">
+                            <option>All countries</option>
+                            <option>Argentina</option>
+                            <option>Brasil</option>                    
+                            <option>Chile</option>
+                            <option>Uruguay</option>
+                        </select>                   
+                    
                 <div class="filter__dates">
                     <input type="date" id="checkIn" class="filter__datefrom"></input>
                     <input type="date" id="checkOut" class="filter__dateto"></input>
                 </div> 
+                
                 <div class="filter__others">
                     <select class="filter__prices">
-                            <option><i class="fa-solid fa-dollar-sign"></i>All prices</option>
+                            <option>All prices</option>
                             <option>$</option>
                             <option>$$</option>
                             <option>$$$</option>
@@ -52,5 +55,6 @@
         </div>
     </main>
     <script src="./index.js"></script>
+</div>
 </body>
 </html>
