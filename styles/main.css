@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&family=Roboto:wght@400;500;700&display=swap');
+
+.container__main .images{
+    position: relative;
+    width: 420px; 
+    height: 120px;
+    overflow: hidden;
+    border-radius: 6px;
+}
+.container__main{
+    width: auto;
+    position: relative;
+    display: flex;
+    margin: 15px;
+}
+
+.container__main .images .capa{
+    position: absolute;
+    top: 0;
+    width: 420px;
+    height: 120px;
+    background: rgba(0,0,0,0.47);    
+    color: #ffffff;
+}
+.container__main .images .capa h5{
+    position:absolute;
+    font-size: 18px;
+    font-family: Roboto, sans-serif;
+    margin: 15px;
+}
+.container__main .images .capa img{
+    position:absolute;
+    width: 16px;
+    margin: 30px 0;
+    
+}
+.container__main .images .capa p{
+    position:absolute;
+    margin: 30px 25px;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+}
+
+.container__main .btns{
+    position: absolute;
+    background: rgba(0,0,0,0.47);
+    border-color: #ffffff;
+}

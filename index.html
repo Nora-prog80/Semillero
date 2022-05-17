@@ -4,57 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/styles/styles.css"/>
+    <link rel="stylesheet" type="text/css" href="/styles/index.css"/>
+    <link rel="stylesheet" type="text/css" href="/styles/header.css"/>
+    <link rel="stylesheet" type="text/css" href="/styles/main.css"/>
     <script src="https://kit.fontawesome.com/546257b008.js" crossorigin="anonymous"></script>
     <title>Reto 2</title>
 </head>
 <body>
     <div class="container">
-    <header class="container__header">
-        <!-- <img src="/images/Header/cover.png" alt="montana_lago"> -->
-        <section>
-            <h2>Book it!</h2>
-            <div  class="container__options">                          
-                        <select class="filter__options-countries">
-                            <option>All countries</option>
-                            <option>Argentina</option>
-                            <option>Brasil</option>                    
-                            <option>Chile</option>
-                            <option>Uruguay</option>
-                        </select>                   
+        <header class="container__header">
+            
+                <h2>Book it!</h2>
+                <div  class="container__options input">                          
+                            <select class="filter__options-countries input" value="" selected>
+                                <option>All countries</option>
+                                <option>Argentina</option>
+                                <option>Brasil</option>                    
+                                <option>Chile</option>
+                                <option>Uruguay</option>
+                            </select>                   
+                        
+                    <div class="filter__dates">
+                        <input type="date" id="checkIn" class="filter__datefrom input"></input>
+                        <input type="date" id="checkOut" class="filter__dateto input"></input>
+                    </div> 
                     
-                <div class="filter__dates">
-                    <input type="date" id="checkIn" class="filter__datefrom"></input>
-                    <input type="date" id="checkOut" class="filter__dateto"></input>
-                </div> 
-                
-                <div class="filter__others">
-                    <select class="filter__prices">
-                            <option>All prices</option>
-                            <option>$</option>
-                            <option>$$</option>
-                            <option>$$$</option>
-                            <option>$$$$</option>
-                        </select>
-                        <select class="filter__sizes">
-                            <option><i class="fa-solid fa-bed"></i>All sizes</option>
-                            <option>Small</option>
-                            <option>Medium</option>
-                            <option>Large</option>
-                        </select>
+                    <div class="filter__others" value="" selected>
+                        <select class="filter__prices input">
+                                <option>All prices</option>
+                                <option>$</option>
+                                <option>$$</option>
+                                <option>$$$</option>
+                                <option>$$$$</option>
+                            </select>
+                            <select class="filter__sizes input" value="" selected>
+                                <option>All sizes</option>
+                                <option>Small</option>
+                                <option>Medium</option>
+                                <option>Large</option>
+                            </select>
                     </div>  
-                    <button class="btn__clear">Clear</button>                
+                        <button class="btn__clear">Clear</button>                
+                </div>
+                <!-- <h3>We have found for you...</h3>
+                <p>All sizes hotels or all category prices, in all countries.</p> -->
+            
+        </header>
+        <main class="container__main">
+            <div class="images">
+                <img  src="/images/Main/Hotels/1alto-atacama.jpg" alt="">
+                <section class="capa">
+                    <h5>hotel</h5>
+                        <div class="container__main country">
+                        <img src="/images/Main/Flags/chile.svg" alt="flag_Chile">
+                        <p>Chile</p>
+                        </div>
+                </section>
+                <section class="btns">
+                    <button class="main__btn+">+</button>
+                    <button class="main__btnBootIt">Book it!</button>
+                </section>
             </div>
-            <!-- <h3>We have found for you...</h3>
-            <p>All sizes hotels or all category prices, in all countries.</p> -->
-        </section>
-    </header>
-    <main>
-        <div>
-            <img  src="/images/Main/Hotels/1alto-atacama.jpg" alt="">
-        </div>
-    </main>
-    <script src="./index.js"></script>
-</div>
+        </main>
+    <script src="/src/index.js"></script>
+    </div>
 </body>
 </html>

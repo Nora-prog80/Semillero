@@ -1,55 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@300;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&family=Roboto:wght@300;400;700&display=swap');
-
-*{
-    margin: 0;
-    padding: 0 auto;
-    box-sizing: border-box;    
-}
-
-body{
-    margin: 0px auto;
-}
-.container{
-    width: 100%;   
-    background: red;
-    
-}
 
 .container__header{
-    position: relative;
+    padding: 10px 16px;
     background: url(/images/Header/cover.png);
-    background-size: cover; 
+    background-size: 100% 100%;
 }
 
 h2{
-    position: absolute;
-    width: 105px;
-    margin-top: 15px;
-    left: 20px;
-    top: 8px;    
-    font-family: 'Pacifico', cursive;
-    font-style: normal;
-    font-weight: 400;
+    font-family: var(--secondFont);
+    font-weight: var(--sm);
     font-size: 30px;
-    line-height: 150%;
-    color: #ffffff;
+    color: var(--fontColor);
 }
 
 .container__options{
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    padding: 6px 10px;
-
-    position: relative;
     width: 90%;
     height: 147px;
-    left: 20px;
-    top: 70px;    
-    background-color: #d7d7dc;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    padding: 9px 0px;
+    background-color: rgba(288, 288, 288, 0.9);
     border-radius:8px;
-
 }
 .location{
     width: 10px;
@@ -63,9 +36,7 @@ h2{
     grid-template-columns: auto;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
-    margin: 10px;
-
+    
     background: url(/images/Header/pin.svg) rgba(255, 255, 255, 255.8);
     background-size: 1rem 1rem;
     background-repeat: no-repeat;
@@ -73,9 +44,7 @@ h2{
     background-position-y: center;
 
     width: 95%;
-    height: 30px;
-    left: 0px;
-    top: 0px;
+    height: 30px;   
 }
 .filter__options-countries{
     padding: 5px 25px;
@@ -86,11 +55,8 @@ h2{
     height: 30px;
     grid-template-columns: 1fr 1fr;
     display: grid;
-    gap: 10px;
-    position: absolute;
-    
-    left: 10px;
-    top: 45px;     
+    gap: 10px;  
+
 }
 .filter__dates .filter__datefrom{
     background: url(/images/Header/checkout.svg) rgba(255, 255, 255, 255.8);
@@ -115,11 +81,8 @@ h2{
     height: 30px;
     grid-template-columns: 1fr 1fr;
     display: grid;
-    gap: 10px;
+    gap: 10px;    
     
-    position: absolute;
-    left: 10px;
-    top: 80px; 
 }
 
 .filter__others .filter__prices{
@@ -141,46 +104,11 @@ h2{
 }
 
 .btn__clear{
-    width: 60px; 
-    height: 25px;
+    width: 60px;
+    height: 20px;
     border-radius: 6px;
-    border-color: white;
-    background: black;
-    color: #ffffff;
-    font-size: 15px;
-    
-    
-    display: flex;
-    justify-content:center;
-    align-items: center;
-}
-
-
-@media (min-width: 494px) {
-    .container__header{
-    width: 600px;        
-    height: 195px;
-    position: relative;
-    background: url(/images/Header/cover.png);
-    background-size: cover;     
-    }
-}
-/* .header__search{
-    position: relative;
-    width: 500px;
-    height: 30px;
-    position: relative;
-    background: rgb(237, 235, 235);
     border: none;
-    border-radius: 30px;
-    padding: 20px;    
+    color: var(--fontColor);
+    background: #333333E0;
+    margin-left: 80%;
 }
-.header__search:focus{
-    outline: none;
-}
-.header__search::placeholder{
-    background-image: url(/icons/search.png);
-    background-size: 15px 15px;
-    background-repeat: no-repeat;
-    background-position: right;
-} */
